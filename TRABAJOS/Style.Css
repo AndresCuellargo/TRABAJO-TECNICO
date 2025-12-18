@@ -1,0 +1,60 @@
+/* Paleta: Azul #0047AB, Blanco #FFFFFF, Gris #333333 */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f4f4f4;
+    color: #333333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: #FFFFFF;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    width: 350px;
+    border-top: 5px solid #0047AB; /* Restricción visual de color primario */
+}
+
+h2 {
+    color: #0047AB;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; /* Restricción: el padding no afecta el ancho */
+}
+
+button {
+    background-color: #0047AB;
+    color: white;
+    padding: 14px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #003380; /* Azul más oscuro al pasar el mouse */
+}
+
+.error-msg {
+    color: #d32f2f;
+    background-color: #fdecea;
+    padding: 10px;
+    border-radius: 4px;
+    font-size: 14px;
+    margin-bottom: 10px;
+}

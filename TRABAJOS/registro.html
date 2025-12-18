@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+</head>
+<body>
+    <div class="container" style="width: 450px;">
+        <h2>Formulario de Registro</h2>
+        <form th:action="@{/guardar}" method="post">
+            <input type="text" name="nombres" placeholder="Nombres completo" required>
+            <input type="text" name="apellidos" placeholder="Apellidos" required>
+            <input type="text" name="cedula" placeholder="Número de Cédula" required>
+            <label style="font-size: 12px;">Fecha de Nacimiento:</label>
+            <input type="date" name="fechaNacimiento" required>
+            <input type="text" name="username" placeholder="Elija un usuario" required>
+            <input type="password" name="password" placeholder="Elija una clave" required>
+            <button type="submit">Finalizar Registro</button>
+        </form>
+    </div>
+</body>
+</html>
